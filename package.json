@@ -1,0 +1,21 @@
+{
+  "name": "socialapp",
+  "version": "1.0.0",
+  "description": "API for Social Apps",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Express",
+    "API"
+  ],
+  "author": "Ayush Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
