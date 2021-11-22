@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   res.send("<h1>HELLO WORLD <samll>A small text</small?</h1>");
 });
 
+app.get("/api/v1/:id/:value", (req, res) => {
+  res.send(`Inisde a path ${req.params.id} ${req.params.value}`);
+});
+
 app.get("/api/v1/:id", (req, res) => {
   const path = req.params.id;
   res.send(`Inisde a path ${path}`);
