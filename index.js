@@ -21,6 +21,10 @@ app.get("/api/v1/:id", (req, res) => {
   res.send(`Inisde a path ${path}`);
 });
 
+app.get("/api/v1/demo", (req, res) => {
+  res.send(`Inisde a path DEMO`);
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running at port ${PORT}`);
 });
