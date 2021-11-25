@@ -1,7 +1,12 @@
 const express = require("express");
 const app = express();
+const swaggerUi = require("swagger-ui-express");
+const YAML = require("yamljs");
+const swaggerDocument = YAML.load("./swagger.yaml");
 
 const PORT = process.env.PORT || 3000;
+
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.get("/", (req, res) => {
   res.send("<h1>HELLO WORLD <samll>A small text</small?</h1>");
